@@ -1,0 +1,28 @@
+<div class="modal fade" id="info-med-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="custom-panel">
+		<div class="custom-panel-header">
+			Information du médecin <i data-dismiss="modal" class="fa fa-times close-modal pull-right"></i>
+		</div>
+		<div class="custom-panel-content">
+      <input type="hidden" id="change-medecin-id">
+      <label>Nom :</label>
+      <input type="text" id="change-medecin-nom" class="form-control"><br>
+      <label>Spécialité :</label>
+      <select class="form-control" id="change-medecin-spe"></select><br>
+      <label>Adresse :</label>
+      <input type="text" id="change-medecin-rue" class="form-control" placeholder="Rue..."><br>
+      <label>Ville :</label>
+      <div class="form-inline">
+        <input class="form-control" type="text" id="change-medecin-ville" style="width:64%;" placeholder="Ville...">
+        <input type="text" id="change-medecin-CP" class="form-control" style="width:34%;" placeholder="Code Postal...">
+      </div>
+    </div>
+    <br>
+		<div class="custom-panel-footer">
+			<button id="change-info-med" class="btn btn-accent pull-right">Editer&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></button>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+  </div>
+</div>
