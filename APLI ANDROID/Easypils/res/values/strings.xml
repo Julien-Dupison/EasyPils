@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easypils</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Easypils</string>
+    <string name="title_activity_pilulier">EasyPils</string>
+    <string name="title_activity_pilulieraffichage">EasyPils</string>
+    <string name="title_activity_ordonnances">Easypils</string>
+    <string name="title_activity_profil">Easypils</string>
+    <string name="title_activity_ordo">EasyPils</string>
+    <string name="text_idoubli"><u>Identifiants oubliés</u> ?</string>
+
+    <string name="text_titremedicordo"><u><b>Medicaments :</b></u></string>
+    <string name="text_renouvellementsordo"><u><b>Renouvellements :</b></u></string>
+    
+    <color name="mycolor1">#1a0dab</color>
+
+    <string name="title_activity_demande_mail">DemandeMailActivity</string>
+    <string name="title_activity_ordonnance">OrdonnanceActivity</string>
+
+</resources>

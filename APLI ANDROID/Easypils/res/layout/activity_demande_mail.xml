@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_demande_mail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.easypils.DemandeMailActivity" >
+
+    <TextView
+        android:id="@+id/mailinstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Afin de récupérer vos identifiants, veuillez renseigner votre adresse e-mail, puis appuyer sur le bouton envoyer\n\nUn e-mail contenant vos informations de connection vous sera envoyé à cette adresse" />
+
+    <EditText
+        android:id="@+id/mailIdOubli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="99dp"
+        android:ems="10"
+        android:hint="Adresse e-mail"
+        android:backgroundTint="#EF9A9A"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/mailEnvoyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mybutton"
+        android:onClick="SubmitDemandeMail"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Envoyer"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

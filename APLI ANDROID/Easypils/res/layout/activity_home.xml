@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.easypils.HomeActivity" >
+
+    <TextView
+        android:id="@+id/periodePillulier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Menu"
+        android:textSize="40sp" 
+        />
+
+    <Button
+        android:id="@+id/Pilulier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Ordonnance"
+        android:layout_below="@+id/periodePillulier"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/mybutton"
+        android:onClick="gotoPilulier"
+        android:paddingBottom="5dp"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:paddingTop="5dp"
+        android:text="Pilulier"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Ordonnance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/mybutton"
+        android:onClick="gotoOrdonnances"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="Ordonnances"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Ordonnance"
+        android:layout_below="@+id/Ordonnance"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/mybutton"
+        android:onClick="gotoProfil"
+        android:paddingBottom="5dp"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:paddingTop="5dp"
+        android:text="Profil"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+</RelativeLayout>
