@@ -19,7 +19,6 @@
 			header('Location: ../../connection.php');
 		}
 	} else {
-		echo '3';
 		header('Location: ../../connection.php');
 	}
 ?>

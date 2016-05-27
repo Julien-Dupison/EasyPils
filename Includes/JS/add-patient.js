@@ -1,6 +1,7 @@
-$('#add_patient').click(function(){
+$('#button_add_patient').click(function(){
 	var nom = $('#new-patient-nom').val().trim();
 	var prenom = $('#new-patient-prenom').val().trim();
+	var mail = $('#new-patient-mail').val().trim();
 	var dob = $('#new-patient-dob').val().trim();
 	var rue = $('#new-patient-rue').val().trim();
 	var ville = $('#new-patient-ville').val().trim();
@@ -9,6 +10,7 @@ $('#add_patient').click(function(){
 
 	var nom_value = true;
 	var prenom_value = true;
+	var mail_value = true;
 	var dob_value = true;
 	var rue_value = true;
 	var ville_value = true;
@@ -27,6 +29,13 @@ $('#add_patient').click(function(){
 		$('#new-patient-prenom').addClass('custom-warning');
 	} else {
 		$('#new-patient-prenom').removeClass('custom-warning');
+	}
+
+	if(!mail){
+		mail_value = false;
+		$('#new-patient-mail').addClass('custom-warning');
+	} else {
+		$('#new-patient-mail').removeClass('custom-warning');
 	}
 
 	if(!dob){
@@ -64,13 +73,14 @@ $('#add_patient').click(function(){
 		$('#new-patient-medecin').removeClass('custom-warning');
 	}
 
-	if(nom_value && prenom_value && dob_value && rue_value && ville_value && cp_value && med_value){
+	if(nom_value && prenom_value && mail_value && dob_value && rue_value && ville_value && cp_value && med_value){
 		var request = $.ajax({
 			url:'Includes/traitements/Ajax/add_patient.php',
 			type:'POST',
 			data: {
 				'nom':nom,
 				'prenom':prenom,
+				'mail':mail,
 				'dob':dob,
 				'rue':rue,
 				'ville':ville,
@@ -82,6 +92,7 @@ $('#add_patient').click(function(){
 		request.done(function(data){
 			$('#new-patient-nom').val('');
 			$('#new-patient-prenom').val('');
+			$('#new-patient-mail').val('');
 			$('#new-patient-dob').val('');
 			$('#new-patient-rue').val('');
 			$('#new-patient-ville').val('');

@@ -8,7 +8,6 @@ $(document).ready(function() {
 		}
 	?>
 	$("#<?=$pane;?>").effect("slide", "slow"); //show selected pane
-
 });
 
 function change_page(nom_page){

@@ -24,5 +24,8 @@
 		<li>
 			<a id="butmedecin" class="butpane" showing="medecins" href="#medecins"><i class="fa fa-user-md"></i>&nbsp;&nbsp;&nbsp;Medecins</a>
 		</li>
+		<li>
+			<a id="butrenouvellements" class="butpane" showing="renouvellements" href="#renouvellements"><i class="fa fa-refresh"></i>&nbsp;&nbsp;&nbsp;Renouvellements</a>
+		</li>
 	</ul>
 </div>

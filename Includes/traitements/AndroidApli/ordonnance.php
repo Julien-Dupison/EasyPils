@@ -1,8 +1,8 @@
 <?php
-	header('Content-Type: application/json');
 	include "../../database.php";
 
-	$id_ordo = $_GET['id_ordonnance'];
+	$id_ordo = $_POST['id_ordo'];
+
 	$sql = "SELECT * FROM ordonnances WHERE num_ord = $id_ordo";
 	$ordonnance = $db->query($sql)->fetch(PDO::FETCH_ASSOC);
 
@@ -41,6 +41,10 @@
 			"medicaments" => $medicaments,
 			"renouvellements" => $renouvellements,
 		);
-		echo json_encode($return);
+
+		$reponse = array();
+		$code = "ordonnance_success";
+		array_push($reponse,array("code"=>$code,"message"=>$return));
+
+		echo json_encode(array("server_response"=>$reponse));
 	}
-?>

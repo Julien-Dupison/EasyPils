@@ -16,7 +16,7 @@ var page_ordos_med = 0;
 
 $(document).ready(function(){
 	load_medecins();
-  load_spes();
+  	load_spes();
 })
 
 $('#table-medecin').on("click", ".medecin_row", function(){
@@ -157,7 +157,7 @@ $('#ordos-med-plus').click(function(){
 //Modification info patient
 $('#change-info-med').click(function(){
 
-	var id_medecin =	$('#change-medecin-id').val();
+	var id_medecin = $('#change-medecin-id').val();
 	var nom = $('#change-medecin-nom').val();
 	var spe = $('#change-medecin-spe').val();
 	var rue = $('#change-medecin-rue').val();
@@ -257,6 +257,16 @@ $('#medecin-plus').click(function(){
 	affiche_medecins();
 })
 
-$('table-patient-med').on('click','.patient-med-row',function(){
+$('#table-patient-med').on('click','.patient-med-row',function(){
+	var id_pat = $(this).attr('id-patient-med');
+	change_page('patients');
+	load_patient(id_pat);
+});
 
+$('#table-medecin').on('mouseenter','.medecin_row', function(){
+	$(this).children().last().append('<span style="position:absolute;right:28px;" class="delete-medecin"><i style="color:#c92626;" class="fa fa-trash"></i></span>');
+});
+
+$('#table-medecin').on('mouseleave','.medecin_row', function(){
+	$(this).children().last().children().last().remove();
 });

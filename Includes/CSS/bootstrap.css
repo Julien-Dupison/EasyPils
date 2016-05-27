@@ -7092,15 +7092,33 @@ button.close {
 #add_ordo_patient_block{
 	display:inline-block;
 	margin-bottom:20px;
-	max-width: 45%;
+	width: 45%;
+	padding:5px;
+	transition:0.3s;
+	border:1px solid #FFFFF0;
+}
+#add_ordo_patient_block:hover{
+	transform: translateY(-5px);
+	box-shadow: 0px 1px 5px 0px rgba(239, 154, 154, 0.7);
+    border: 1px solid rgba(0,0,0,0);
+	cursor:pointer;
 }
 
 #add_ordo_medecin_block{
 	display:inline-block;
 	min-width:200px;
-	max-width: 45%;
+	width: 45%;
 	float:right;
 	margin-bottom:20px;
+	padding:5px;
+	transition:0.3s;
+	border:1px solid #FFFFF0;
+}
+#add_ordo_medecin_block:hover{
+	transform: translateY(-5px);
+	box-shadow: 0px 1px 5px 0px rgba(239, 154, 154, 0.7);
+    border: 1px solid rgba(0,0,0,0);
+	cursor:pointer;
 }
 
 .add-ordo-medic-container{
@@ -7233,4 +7251,14 @@ button.close {
   border-top-color: #EF9A9A;
   box-shadow: 0px 1px 5px 0px rgba(239, 154, 154, 0.7);
 
+}
+
+#opt-pharm{
+	position:absolute;
+	top:-10px;
+	left:10px;
+	color:#c92626;
+}
+#opt-pharm:hover{
+	color:rgb(255, 193, 7);
 }

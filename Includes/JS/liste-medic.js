@@ -57,6 +57,7 @@ function load_volume(){
 	request.done(function(data){
 		$.each(data, function(key, value){
 			$('#new-medic-volume').append('<option value="'+value.id_vol+'">'+value.nom_vol+'</option>');
+			$('#edit-medic-volume').append('<option value="'+value.id_vol+'">'+value.nom_vol+'</option>');
 		});
 	});
 }
@@ -81,4 +82,12 @@ $('#medic-plus').click(function(){
 		page_medic++;
 	}
 	affiche_medics();
+});
+
+$('#table-medic').on('mouseenter','.row_medic', function(){
+	$(this).children().last().append('<span style="position:absolute;right:48px;" class="edit-medic"><i style="color:#c92626;" class="fa fa-pencil edit-icon"></i></span><span style="position:absolute;right:28px;" class="delete-medic"><i style="color:#c92626;" class="fa fa-trash"></i></span>');
+});
+
+$('#table-medic').on('mouseleave','.row_medic', function(){
+	$(this).children().last().children().remove();
 });

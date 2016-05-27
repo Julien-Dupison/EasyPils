@@ -1,11 +1,3 @@
-$('#table-medecin').on('mouseenter','.medecin_row', function(){
-	$(this).children().last().append('<span style="position:absolute;right:28px;" class="delete-medecin"><i style="color:#c92626;" class="fa fa-trash"></i></span>');
-});
-
-$('#table-medecin').on('mouseleave','.medecin_row', function(){
-	$(this).children().last().children().last().remove();
-});
-
 $('#table-medecin').on('click','.delete-medecin', function(){
 	var id_med = $(this).parent().parent().attr('id_medecin');
 	$('#delete-medecin-modal').modal('toggle');

@@ -1,11 +1,3 @@
-$('#table-medic').on('mouseenter','.row_medic', function(){
-	$(this).children().last().append('<span style="position:absolute;right:48px;" class="edit-medic"><i style="color:#c92626;" class="fa fa-pencil edit-icon"></i></span><span style="position:absolute;right:28px;" class="delete-medic"><i style="color:#c92626;" class="fa fa-trash"></i></span>');
-});
-
-$('#table-medic').on('mouseleave','.row_medic', function(){
-	$(this).children().last().children().remove();
-});
-
 $('#table-medic').on('click','.delete-medic', function(){
 	var id_medic = $(this).parent().parent().attr('id_medic');
 	$('#delete-medic-modal').modal('toggle');
@@ -25,8 +17,4 @@ $('#button-delete-medic').click(function(){
 		$('#custom-toast').attr('action','delete-medic');
 		$('#custom-toast').attr('id-action',data);
 	});
-});
-
-$('#table-medic').on('click','.edit-medic', function(){
-	console.log('coucou');
 });

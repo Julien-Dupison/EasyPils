@@ -47,10 +47,12 @@
 					</ul>
 					<hr style="border-color:#EF9A9A;">
 					<p style="font-weight:bold;">Renouvelée <span id="nb_renouv"></span>/<span id="nb_renouv_total"></span> fois</p>
+					<ul id="ordonnance_liste_renouvelement" style="list-style:none;margin-left:0;padding-left:0;">
+					</ul>
 				</div>
 				<div class="custom-panel-footer">
 
-					<button style="margin-left:5px;" class="btn btn-accent pull-right">Renouveler&nbsp;&nbsp;&nbsp;<i class="fa fa-refresh"></i></button>
+					<button id_ordo="" id='btn-renouv-ordo' style="margin-left:5px;" class="btn btn-accent pull-right">Renouveler&nbsp;&nbsp;&nbsp;<i class="fa fa-refresh"></i></button>
 
 					<div style="clear:both"></div>
 				</div>
@@ -104,36 +106,6 @@
 			</div>
 		</div>
 		<div class="col-lg-6">
-			<div class="custom-panel">
-				<div class="custom-panel-header">
-					Patients
-					<input id="ordo-patient-search" class="custom-searchinput2 pull-right" style="font-weight:normal;font-size:15px;color:#000000;" placeholder="Recherche..."></input>
-				</div>
-				<div style="padding:0;" class="custom-panel-content">
-					<table id="table_add_ordo_patient" class="table table-hover" style="margin-bottom:0;">
-						<tr>
-							<th>Nom</th>
-							<th>Prenom</th>
-							<th>Naissance</th>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="custom-panel">
-				<div class="custom-panel-header">
-					Medecins
-					<input id="ordo-medecin-search" class="custom-searchinput2 pull-right" style="font-weight:normal;font-size:15px;color:#000000;" placeholder="Recherche..."></input>
-				</div>
-				<div style="padding:0;" class="custom-panel-content">
-					<table id="table_add_ordo_medecin" class="table table-hover" style="margin-bottom:0;">
-						<tr>
-							<th>Nom</th>
-							<th>Profession</th>
-							<th>Telephone</th>
-						</tr>
-					</table>
-				</div>
-			</div>
 			<div class="custom-panel">
 				<div class="custom-panel-header">
 					Medicaments

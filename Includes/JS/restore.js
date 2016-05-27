@@ -17,6 +17,14 @@ $('#custom-toast').on('click','.custom-toast-dismiss', function(){
 			script = 'Includes/traitements/Ajax/restore_medic.php'
 			reload = 'medic'
 			break;
+		case 'delete-pharm' :
+			script = 'Includes/traitements/Ajax/restore_pharm.php'
+			reload = 'pharm'
+			break;
+		case 'delete-demande' :
+			script = 'Includes/traitements/Ajax/restore_demande.php'
+			reload = 'demande'
+			break;
 	}
 
 	var request = $.ajax({
@@ -35,6 +43,12 @@ $('#custom-toast').on('click','.custom-toast-dismiss', function(){
 				break;
 			case 'medic' :
 				load_medics();
+				break;
+			case 'pharm' :
+				load_pharmaciens();
+				break;
+			case 'demande' :
+				load_demandes();
 				break;
 		}
 	});

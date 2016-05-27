@@ -55,7 +55,7 @@ $('#add_medecin').click(function(){
 			type:'POST',
 			data: {
 				'nom':nom,
-        'spe':spe,
+        		'spe':spe,
 				'rue':rue,
 				'ville':ville,
 				'cp':cp,
@@ -65,7 +65,7 @@ $('#add_medecin').click(function(){
 		});
 		request.done(function(data){
 			$('#new-medecin-nom').val('');
-      $('#new-medecin-spe').val('');
+      		$('#new-medecin-spe').val('');
 			$('#new-medecin-rue').val('');
 			$('#new-medecin-ville').val('');
 			$('#new-medecin-CP').val('');

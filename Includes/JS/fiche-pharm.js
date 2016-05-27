@@ -18,19 +18,15 @@ function load_pharm(){
 		dataType : 'json'
 	});
 	request.done(function(data){
-
 		ordos_pharm = data.ordonnances;
 		nb_total_ordos_pharm = ordos_pharm.length;
-    console.log(data);
-    set_nb_pages_ordos_pharm();
-    affiche_ordos_pharm();
+	    set_nb_pages_ordos_pharm();
+	    affiche_ordos_pharm();
 
-  //Pane info pharmacien
-  $('#info_nom_pharm').html(data.pharmacien.prenom_pharm+" "+data.pharmacien.nom_pharm);
-  $('#info_emb_pharm').html(data.pharmacien.embauche_pharm);
-  $('#info_adresse_pharm').html(data.pharmacien.adresse_pharm+", "+data.pharmacien.postal_pharm+" "+data.pharmacien.ville_pharm);
-
-
+		//Pane info pharmacien
+		$('#info_nom_pharm').html(data.pharmacien.prenom_pharm+" "+data.pharmacien.nom_pharm);
+		$('#info_emb_pharm').html(data.pharmacien.embauche_pharm);
+		$('#info_adresse_pharm').html(data.pharmacien.adresse_pharm+", "+data.pharmacien.postal_pharm+" "+data.pharmacien.ville_pharm);
 	});
 
 	request.fail(function(err){

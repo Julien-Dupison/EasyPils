@@ -1,0 +1,29 @@
+<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="custom-panel">
+		<div class="custom-panel-header">
+			Informations <i data-dismiss="modal" class="fa fa-times close-modal pull-right"></i>
+		</div>
+		<div class="custom-panel-content">
+      <label>Nom :</label>
+      <input type="text" id="change-patient-nom" class="form-control"><br>
+      <label>Prenom :</label>
+      <input type="text" id="change-patient-prenom" class="form-control"><br>
+      <label>Date de naissance :</label>
+      <input type="date" id="change-patient-dob" class="form-control"><br>
+      <label>Adresse :</label>
+      <input type="text" id="change-patient-rue" class="form-control" placeholder="Rue..."><br>
+      <label>Ville :</label>
+      <div class="form-inline">
+        <input class="form-control" type="text" id="change-patient-ville" style="width:64%;" placeholder="Ville...">
+        <input type="text" id="change-patient-CP" class="form-control" style="width:34%;" placeholder="Code Postal...">
+      </div>
+    </div>
+    <br>
+		<div class="custom-panel-footer">
+			<button id="change-info-patient" class="btn btn-accent pull-right">Editer&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></button>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+  </div>
+</div>

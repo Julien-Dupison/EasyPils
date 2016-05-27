@@ -30,6 +30,14 @@ function load_ordo_medics(){
 	}
 }
 
+$('#add_ordo_patient_block').click(function(){
+	$('#ordonnance-add-patient-modal').modal('toggle');
+});
+
+$('#add_ordo_medecin_block').click(function(){
+	$('#ordonnance-add-medecin-modal').modal('toggle');
+});
+
 function load_ordo_patients(){
 	var recherche = $('#ordo-patient-search').val().trim();
 	if(recherche != ""){
@@ -72,6 +80,7 @@ function load_ordo_medecins(){
 }
 
 $('#table_add_ordo_patient').on('click','.add_ordo_patient_row', function(){
+	$('#ordonnance-add-patient-modal').modal('toggle');
 	var id = $(this).attr('id_patient');
 	new_ordo_patient(id);
 	$('#ordo-patient-search').val('');
@@ -83,6 +92,7 @@ $('#table_add_ordo_medecin').on('click','.add_ordo_medecin_row', function(){
 	new_ordo_medecin(id);
 	$('#ordo-medecin-search').val('');
 	load_ordo_medecins();
+	$('#ordonnance-add-medecin-modal').modal('toggle');
 });
 $('#table_add_ordo_medic').on('click','.add_ordo_medic_row', function(){
 	var id = $(this).attr('id_medic');
@@ -250,7 +260,7 @@ $('#submit-new-ordo').click(function(){
 		request.fail(function(){
 			customtoast('Erreur',false);
 		});
-		
+
 	} else {
 		customtoast('Veuillez renseigner tous les champs',false);
 	}

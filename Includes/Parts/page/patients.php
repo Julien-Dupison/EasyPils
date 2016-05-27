@@ -107,6 +107,8 @@
 						<input type="text" id="new-patient-nom" class="form-control"><br>
 						<label>Prenom :</label>
 						<input type="text" id="new-patient-prenom" class="form-control"><br>
+						<label>Mail :</label>
+						<input type="text" id="new-patient-mail" class="form-control"><br>
 						<label>Date de naissance :</label>
 						<input type="date" id="new-patient-dob" class="form-control"><br>
 						<label>Adresse :</label>
@@ -124,7 +126,7 @@
 				</div>
 				<div id="panel-content-patient-form" class="custom-panel-footer">
 					<div style="text-align:right;">
-						<button id="add_patient" class="btn btn-accent">Ajouter&nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i></button>
+						<button id="button_add_patient" class="btn btn-accent">Ajouter&nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i></button>
 					</div>
 				</div>
 			</div>

@@ -17,7 +17,7 @@
 					<table id="table-medecin" class="table table-hover" style="margin-bottom:0;">
 						<tr>
 							<th style="border-top:none;">Nom</th>
-      				<th style="border-top:none;">Spécialité</th>
+      						<th style="border-top:none;">Spécialité</th>
 							<th style="border-top:none;">Adresse</th>
 							<th style="border-top:none;">Téléphone</th>
 						</tr>
